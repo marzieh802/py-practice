@@ -1,0 +1,2 @@
+inside write
+test9
