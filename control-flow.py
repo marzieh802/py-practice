@@ -69,5 +69,35 @@ for item in people_1:
 
     for key, value in item.items():
         line += f"'{key}': '{value}',"
-    line+= "\n"
+    line += "\n"
 print(line)
+
+x = 0
+while x < 5:
+    print(f"the value of x is {x}")
+    x += 2
+else:
+    print(f"{x}")
+
+numbers_list = [1, 2, 3, 4, 5, 6, 7, 8]
+for num in numbers_list:
+    # pass
+    if num == 3:
+        continue
+    if num == 6:
+        break
+    print(num)
+
+
+x = 0
+while x <= 5:
+
+    if x == 2:
+        x += 1
+        continue
+    if x == 4:
+        break
+
+    print(f"x: {x}")
+    x += 1
+print("while done.")
