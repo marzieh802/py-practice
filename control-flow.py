@@ -16,8 +16,8 @@ for num in my_list:
 
 message = "earth: please protect me"
 
-for chr in message:
-    print(chr)
+for _ in message:
+    print("hello")
 
 plus = 0
 for num in my_list:
