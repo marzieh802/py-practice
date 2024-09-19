@@ -122,7 +122,10 @@
 
 # for index,letter in enumerate("ertyu"):
 #     print(index,letter,"\n")
+
 # indentation iterate
+
+
 # li1 = [1,2,3,4,5]
 # li2 = ['a','b','c']
 # li3 = list(zip(li1,li2))
@@ -147,10 +150,63 @@
 # print(random_num)
 
 
-result= input("what's your favorite color? ")
-print(type(result))
+# result= input("what's your favorite color? ")
+# print(type(result))
 
-age = int(input("how old are you?")) #explicit casting
-print(type(age))
+# age = int(input("how old are you?")) #explicit casting
+# print(type(age))
 
-print("program is ending")
+# print("program is ending")
+
+# my_list = [num for num in range(30,81)]
+# print(my_list)
+
+# my_list = [num for num in range(50,101) if not(num%2)]
+# print(my_list)
+
+# my_list = [number if number%2 else "even" for number in range(1,11)]
+# print(my_list)
+
+# my_list = [f"{h} hour: {m} minute" for h in [1,2] for m in range(0,61)]
+# print(my_list)
+
+# my_list = []
+# for h in [1,2]:
+#     for m in range(0,5):
+#         my_list.append(f"{h} hour: {m} minute")
+# print(my_list)
+
+# st = "print only the words that start with s in this sentence"
+# words = st.split(" ")
+# for word in words:
+#     if word.startswith("s"):
+#         print(word)
+
+# my_list = [num for num in range(1,51) if not(num%3)]
+# print(my_list)
+
+# st = "print every word in this sentence that has an even number of letters"
+# words = st.split(" ")
+# for word in words:
+#     if len(word) %2==0:
+#         print(f"{word} : even")
+
+
+# for inte in range(1,101):
+#     if (inte % 3 == 0 and inte % 5 == 0):
+#         print("FizzBuzz")
+#     elif inte %5 == 0:
+#         print("Buzz")
+#     elif inte %3 == 0:
+#         print("Fizz")
+#     else:
+#         print(inte)
+
+# list2 = [1,2,3,4]
+# print(list2[0])
+
+st = "create a list of the first letters of every word in this string"
+my_list = [word[0] for word in st.split(" ")]
+print(my_list)
+
+
