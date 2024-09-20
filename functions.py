@@ -1,7 +1,7 @@
-# def say_hello(name): 
+# def say_hello(name):
 #     '''
 #     this is a multi line comment and
-#     name is parameter 
+#     name is parameter
 #     '''
 #     print("hello",name)
 
@@ -32,7 +32,7 @@
 #         else:
 #             result += f"{inte}"
 #         result += ", "
-    
+
 #     return result
 # final = fizzbuzz_game(5,33)    #make dynomic the code
 # print(final)
@@ -42,8 +42,10 @@
 # newstr = say_hello(final)
 # print("newstr: ",newstr)
 # print("newstr: ",type(newstr))
-
-def multiply(num1,num2 = 5,num3 = 4):
+# hello my love
+def multiply(num1, num2=5, num3=4):
     return num1*num2*num3
-res = multiply(3,4)
+
+
+res = multiply(3, 4)
 print(res)
