@@ -118,10 +118,10 @@
 # word ="dfghj"
 # for letter in word :
 #     print(word[index_count])
-#     index_count +=1
+#     index_count +=1    this is counting the index of the word
 
 # for index,letter in enumerate("ertyu"):
-#     print(index,letter,"\n")
+    # print(index,letter,"\n")   this is counting the index of the word
 
 # indentation iterate
 
