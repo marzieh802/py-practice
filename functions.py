@@ -51,13 +51,76 @@
 # print(res)
 
 
-def get_even_list(item):
-    even_list = []
-    for num in item:
-        if (num % 2 == 0):
-            even_list.append(num)
-    return even_list
+# def get_even_list(item):
+#     even_list = []
+#     for num in item:
+#         if (num % 2 == 0):
+#             even_list.append(num)
+#     return even_list
 
 
-even = get_even_list([1, 2, 3, 4, 5, 6])
-print(even)
+# even = get_even_list([1, 2, 3, 4, 5, 6])
+# print(even)
+
+
+# list_of_employee = [("jack",3),("michael",8),("walter",0)] 
+# def find_lowest_off(list_of_employee):
+#     check_hours = 30
+#     lowest_hour_employee = ""
+#     for name,hours in list_of_employee:
+#         if(check_hours > hours):
+#             check_hours = hours
+#             lowest_hour_employee = name
+
+#     return (lowest_hour_employee,check_hours)
+# lowest_off = find_lowest_off(list_of_employee)
+# print(lowest_off)
+
+from random import shuffle
+
+# def shuffle_list(list): # list = new list
+#     shuffle(list)
+#     return list
+# new_list = [1,2,3,4,5]
+# test = shuffle_list(new_list)
+# print("test: ", test)
+# print("new_list: ",new_list)
+
+
+# def shuffle_list(my_list):
+#     temp = list(my_list) 
+#     shuffle(temp)
+#     return temp
+# new_list = [1,2,3,4,5]
+# test = shuffle_list(new_list)
+# print("test: ", test)
+# print("new_list: ",new_list)
+
+
+def shuffle_list(my_list):
+    temp = list(my_list) 
+    shuffle(temp)
+    return temp
+
+def player_guess():
+    guess = ""
+    while not(guess in ["0","1","2"]):
+        guess = input("pick a number between 0 , 1 , or 2 :")
+    return int(guess)
+
+def check_guess(list_param,input_guess):
+    if(list_param[input_guess] == 'o'):
+        print("correct answer!!!")
+    else:
+        print("wrong answer!!!")
+        print(list_param)
+
+my_list = [' ','o',' ']
+
+mixed_list = shuffle_list(my_list)
+given_guess = player_guess()
+check_guess(mixed_list,given_guess)
+
+
+
+
