@@ -43,9 +43,21 @@
 # print("newstr: ",newstr)
 # print("newstr: ",type(newstr))
 # hello my love
-def multiply(num1, num2=5, num3=4):
-    return num1*num2*num3
+# def multiply(num1, num2=5, num3=4):
+#     return num1*num2*num3
 
 
-res = multiply(3, 4)
-print(res)
+# res = multiply(3, 4)
+# print(res)
+
+
+def get_even_list(item):
+    even_list = []
+    for num in item:
+        if (num % 2 == 0):
+            even_list.append(num)
+    return even_list
+
+
+even = get_even_list([1, 2, 3, 4, 5, 6])
+print(even)
