@@ -15,7 +15,7 @@
 #         print(num)
 
 # message = "earth: please protect me"
-
+# message[0]
 # for _ in message:
 #     print("hello")
 
@@ -164,7 +164,7 @@
 # my_list = [num for num in range(50,101) if not(num%2)]
 # print(my_list)
 
-# my_list = [number if number%2 else "even" for number in range(1,11)]
+# my_list = [number if number%2 else "even" for number in range(1,11)] # else just return srt.
 # print(my_list)
 
 # my_list = [f"{h} hour: {m} minute" for h in [1,2] for m in range(0,61)]
