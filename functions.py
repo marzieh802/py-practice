@@ -192,3 +192,42 @@
 # lett = capitalize_letter('jhjgjgkhl')
 # print(lett)
 
+# def master_yoda(sentence):
+#     new_sentence = ""
+#     splitted_sentence = sentence.split(" ")
+#     count = len(splitted_sentence) - 1
+#     while count >= 0 : # 2
+#         new_sentence += splitted_sentence[count]
+#         new_sentence += " "
+#         count -= 1 #1
+
+#     return new_sentence
+# my_sentence = master_yoda("love is everything")
+# print(my_sentence)
+
+# print(abs(-7))
+
+# def almost_there(num):
+#     # if (num in range(90,111) or num in range(190,211)):
+#     #     return True
+#     # return False
+#     return num in range(90,111) or num in range(190,211)
+# print(almost_there(45))
+# print(almost_there(90))
+
+# print("hahahah".count("hah"))  # not including overlap
+
+
+# def laughter(pattern, text): # including overlap
+#     repitition = 0
+#     for index, _ in enumerate(text): # 4
+#         for p_index, _ in enumerate(pattern): # 0
+#             next_chr_index = index + p_index # 3+0 
+#             if ((next_chr_index >= len(text)) or #7
+#                     (text[next_chr_index] != pattern[p_index])):
+#                 break
+#             if (p_index == len(pattern)-1): # 2
+#                 repitition += 1
+#     return repitition
+# smile = laughter("hah", "hahahah")
+# print(smile)

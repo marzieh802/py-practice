@@ -205,8 +205,8 @@
 # list2 = [1,2,3,4]
 # print(list2[0])
 
-st = "create a list of the first letters of every word in this string"
-my_list = [word[0] for word in st.split(" ")]
-print(my_list)
+# st = "create a list of the first letters of every word in this string"
+# my_list = [word[0] for word in st.split(" ")]
+# print(my_list)
 
 
