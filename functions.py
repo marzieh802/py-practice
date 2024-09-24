@@ -231,3 +231,45 @@
 #     return repitition
 # smile = laughter("hah", "hahahah")
 # print(smile)
+
+# ch_li = [1,2,3,4]
+# def change(num): # pass by reference
+#     num[0] = 2
+# change(ch_li)
+# print(ch_li)
+
+# ch_li = 5
+# def change(num): # pass by value (copy)
+#     num = 3
+# change(ch_li)
+# print(ch_li)
+
+# ch_li = {"a":True}
+# def change(num): # pass by reference
+#     num["a"] = False
+# change(ch_li)
+# print(ch_li)
+
+# ch_li = "abc"
+# def change(num): # pass by value
+#     num[1] = "f" # strings are immutable
+# change(ch_li)
+# print(ch_li)
+
+# ch_li = "abc"
+# def change(num): # pass by value
+#     num = "jkl"
+#     # str1 = num[1:2]
+
+#     # print(str1)
+# change(ch_li)
+# print(ch_li)
+
+ch_li = True
+def change(num): # pass by value
+    num = False
+change(ch_li)
+print(ch_li)
+
+# int, str, bool => primitive data type => pass by value 
+# dict, list, tuple => compund data type => pass by reference
