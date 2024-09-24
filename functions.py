@@ -222,7 +222,7 @@
 #     repitition = 0
 #     for index, _ in enumerate(text): # 4
 #         for p_index, _ in enumerate(pattern): # 0
-#             next_chr_index = index + p_index # 3+0 
+#             next_chr_index = index + p_index # 3+0
 #             if ((next_chr_index >= len(text)) or #7
 #                     (text[next_chr_index] != pattern[p_index])):
 #                 break
@@ -265,11 +265,49 @@
 # change(ch_li)
 # print(ch_li)
 
-ch_li = True
-def change(num): # pass by value
-    num = False
-change(ch_li)
-print(ch_li)
+# ch_li = True
+# def change(num): # pass by value
+#     num = False
+# change(ch_li)
+# print(ch_li)
 
-# int, str, bool => primitive data type => pass by value 
+# int, str, bool => primitive data type => pass by value
 # dict, list, tuple => compund data type => pass by reference
+
+# str_text = "hello hello"
+
+
+# def paper_doll(text):
+#     result = ""
+#     for chr in text:
+
+#         # result += f"{chr}{chr}{chr}"
+#         result += "{}{}{}".format(chr,chr,chr)
+
+#     return result
+
+
+# pap = paper_doll(str_text)
+# print(pap)
+
+def blackjack(a, b, c):
+    if not((type(a) is int) and (type(b) is int) and (type(c) is int)):
+        return "please enter integer as arguments"
+    elif (not(a in range(1,12)) or not(b in range(1,12)) or not(c in range(1,12))):
+        return "please enter enteger between 1,11"
+    sum_num = a+b+c
+    if (sum_num <= 21):
+        return sum_num
+    elif (sum_num > 21):  # or else is true
+        if (a == 11 or b == 11 or c == 11):
+            sum_num = sum_num - 10
+            if (sum_num > 21):
+                return "BUST"
+            else:
+                return sum_num
+        else:
+            return "BUST"
+            
+check = blackjack(5,11,7)
+print(check)
+
