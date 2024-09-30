@@ -78,13 +78,13 @@
 
 # from random import shuffle
 
-# # def shuffle_list(list): # list = new list
-# #     shuffle(list)
-# #     return list
-# # new_list = [1,2,3,4,5]
-# # test = shuffle_list(new_list)
-# # print("test: ", test)
-# # print("new_list: ",new_list)
+# def shuffle_list(list): # list = new list
+#     shuffle(list)
+#     return list
+# new_list = [1,2,3,4,5]
+# test = shuffle_list(new_list)
+# print("test: ", test)
+# print("new_list: ",new_list)
 
 
 # # def shuffle_list(my_list):
@@ -157,7 +157,7 @@
 #         return "operation not found"
 
 
-# result = my_func("malfhqefhoqiehfqhef", 2, 4, 5, 6, 1, 7, 2, operation="&")
+# result = my_func("malfhqefhoqiehfqhef", 2, 4, 5, 6, 1, 7, 2, operation="-")
 # print(result)
 
 # write a function that return the lesser of two nums if both number are even
@@ -290,24 +290,42 @@
 # pap = paper_doll(str_text)
 # print(pap)
 
-def blackjack(a, b, c):
-    if not((type(a) is int) and (type(b) is int) and (type(c) is int)):
-        return "please enter integer as arguments"
-    elif (not(a in range(1,12)) or not(b in range(1,12)) or not(c in range(1,12))):
-        return "please enter enteger between 1,11"
-    sum_num = a+b+c
-    if (sum_num <= 21):
-        return sum_num
-    elif (sum_num > 21):  # or else is true
-        if (a == 11 or b == 11 or c == 11):
-            sum_num = sum_num - 10
-            if (sum_num > 21):
-                return "BUST"
-            else:
-                return sum_num
-        else:
-            return "BUST"
+# def blackjack(a, b, c):
+#     if not((type(a) is int) and (type(b) is int) and (type(c) is int)):
+#         return "please enter integer as arguments"
+#     elif (not(a in range(1,12)) or not(b in range(1,12)) or not(c in range(1,12))):
+#         return "please enter enteger between 1,11"
+#     sum_num = a+b+c
+#     if (sum_num <= 21):
+#         return sum_num
+#     elif (sum_num > 21):  # or else is true
+#         if (a == 11 or b == 11 or c == 11):
+#             sum_num = sum_num - 10
+#             if (sum_num > 21):
+#                 return "BUST"
+#             else:
+#                 return sum_num
+#         else:
+#             return "BUST"
             
-check = blackjack(5,11,7)
-print(check)
+# check = blackjack(5,11,7)
+# print(check)
 
+# def summer_69(array):
+#     return sum(array)
+# my_list = summer_69([1,3,5])
+# print(my_list)
+
+# def summer_69(array):
+#     sum_list = 0
+#     seen_6 = False
+#     for num in array:
+#         if(num == 6):
+#             seen_6 = True
+#         if (not(seen_6)):
+#             sum_list += num
+#         if(num == 9):
+#             seen_6 = False
+#     return sum_list
+# my_list = summer_69([4,5,6,7,8,9]) #desighn pattern flag usage
+# print(my_list)
