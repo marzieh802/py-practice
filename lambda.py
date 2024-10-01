@@ -44,17 +44,19 @@
 # check = list(filter(lambda num : not(num % 10),num_list))
 # print(check)
 
-var = 50
-def func(var):
-    print(f"var in func is {var}") #50
-    var = 'hi' # assignment occurs / local
-    print(f"var after change in func is {var}")
-    # temp = lambda var : var +10
-    # return temp
-    return lambda var : var +10
-assignment = func(var)
-print(assignment(var))
-print(var)
+# var = 50
+# def func(var):
+#     print(f"var in func is {var}") #50
+#     var = 'hi' # assignment occurs / local
+#     print(f"var after change in func is {var}")
+#     # temp = lambda var : var +10
+#     # return temp
+#     return lambda var : var +10
+# assignment = func(var)
+# print(assignment(var))
+# print(var)
+
+
 
 
 
