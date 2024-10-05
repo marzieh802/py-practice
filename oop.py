@@ -26,3 +26,25 @@
 
 # person1.age = 10
 # print(person1.say_my_age())
+
+
+
+class Rectangle():
+
+    number_of_angles = 4 # class attribute
+    def __init__(self,length,width):
+        self.length = length
+        self.width = width
+
+    def calc_area(self):
+        return self.length*self.width
+    
+    def calc_perimeter(self):
+        return (self.width + self.length)* 2
+    
+    def get_info(self,name):
+        return f"I'm so {name}\nrectangles have {Rectangle.number_of_angles} angles\nlength = {self.length} width = {self.width}\narea and perimeter = {self.calc_area(),self.calc_perimeter()} "
+    
+r1 = Rectangle(length= 4 , width= 2)
+print(r1.get_info("curious"))
+
