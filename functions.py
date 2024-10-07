@@ -183,7 +183,7 @@
 
 # def capitalize_letter(string):
 #     new_string = ""
-#     for index,name in enumerate(string.capitalize()):
+#     for index,name in enumerate(string.capitalize()): # for --> tuple unpaking
 #         if index == 3:
 #             new_string += name.capitalize()
 #         else:
