@@ -109,23 +109,23 @@
 # # call_eat(cat1)
 # # call_eat(dog1)
 
-class Car():
-    def __init__(self,brand_name,number_of_wheels,maximum_speed):
-        self.brand_name = brand_name
-        self.number_of_wheels = number_of_wheels
-        self.maximum_speed = maximum_speed
+# class Car():
+#     def __init__(self,brand_name,number_of_wheels,maximum_speed):
+#         self.brand_name = brand_name
+#         self.number_of_wheels = number_of_wheels
+#         self.maximum_speed = maximum_speed
 
-    def __str__(self): #string representation of object
-        return f"this car is from {self.brand_name} and has {self.number_of_wheels} and maximum speed is {self.maximum_speed}"
+#     def __str__(self): #string representation of object
+#         return f"this car is from {self.brand_name} and has {self.number_of_wheels} and maximum speed is {self.maximum_speed}"
     
-    def __len__(self):
-        return self.number_of_wheels
+#     def __len__(self):
+#         return self.number_of_wheels
     
-    def __del__(self):
-        print(f"the car object with brand name {self.brand_name} has been deleted")
-car1 = Car('benz',4,300)
-# print(car1)
-print(str(car1))
-print(len(car1))
-del car1
-# print(car1)
+#     def __del__(self):
+#         print(f"the car object with brand name {self.brand_name} has been deleted")
+# car1 = Car('benz',4,300)
+# # print(car1)
+# print(str(car1))
+# print(len(car1))
+# del car1
+# # print(car1)
