@@ -290,42 +290,47 @@
 # pap = paper_doll(str_text)
 # print(pap)
 
-# def blackjack(a, b, c):
-#     if not((type(a) is int) and (type(b) is int) and (type(c) is int)):
-#         return "please enter integer as arguments"
-#     elif (not(a in range(1,12)) or not(b in range(1,12)) or not(c in range(1,12))):
-#         return "please enter enteger between 1,11"
-#     sum_num = a+b+c
-#     if (sum_num <= 21):
-#         return sum_num
-#     elif (sum_num > 21):  # or else is true
-#         if (a == 11 or b == 11 or c == 11):
-#             sum_num = sum_num - 10
-#             if (sum_num > 21):
-#                 return "BUST"
-#             else:
-#                 return sum_num
-#         else:
-#             return "BUST"
-            
-# check = blackjack(5,11,7)
-# print(check)
+def blackjack(a, b, c):
+    if not ((type(a) is int) and (type(b) is int) and (type(c) is int)):
+        return "please enter integer as arguments"
+    elif (not (a in range(1, 12)) or not (b in range(1, 12)) or not (c in range(1, 12))):
+        return "please enter enteger between 1,11"
+    sum_num = a+b+c
+    if (sum_num <= 21):
+        return sum_num
+    elif (sum_num > 21):  # or else is true
+        if (a == 11 or b == 11 or c == 11):
+            sum_num = sum_num - 10
+            if (sum_num > 21):
+                return "BUST"
+            else:
+                return sum_num
+        else:
+            return "BUST"
+
 
 # def summer_69(array):
 #     return sum(array)
 # my_list = summer_69([1,3,5])
 # print(my_list)
 
-# def summer_69(array):
-#     sum_list = 0
-#     seen_6 = False
-#     for num in array:
-#         if(num == 6):
-#             seen_6 = True
-#         if (not(seen_6)):
-#             sum_list += num
-#         if(num == 9):
-#             seen_6 = False
-#     return sum_list
-# my_list = summer_69([4,5,6,7,8,9]) #desighn pattern flag usage
-# print(my_list)
+
+def summer_69(array):
+    sum_list = 0
+    seen_6 = False
+    for num in array:
+        if (num == 6):
+            seen_6 = True
+        if (not (seen_6)):
+            sum_list += num
+        if (num == 9):
+            seen_6 = False
+    return sum_list
+
+
+if (__name__ == "__main__"):
+
+    check = blackjack(5, 11, 7)
+    print(check)
+    my_list = summer_69([4, 5, 6, 7, 8, 9])  # design pattern flag usage
+    print(my_list)
