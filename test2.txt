@@ -1,0 +1,1 @@
+write function in mode 'w' is for writing and creating
