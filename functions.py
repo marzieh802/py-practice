@@ -14,11 +14,11 @@
 # # # say_hello(person) #person is argument.
 
 
-# # # def add(num1,num2):
-# # #     result = num1 + num2
-# # #     return result
-# # # sum = add(88,2)
-# # # print(sum)
+# def add(num1,num2):
+#     result = num1 + num2
+#     return result
+# sum = add(88,2)
+# print(sum)
 
 # # def fizzbuzz_game(start,end):
 # #     result = ""
