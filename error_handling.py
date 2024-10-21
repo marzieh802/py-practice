@@ -53,6 +53,9 @@ def problem2():
         print("All Done from problem2 function(finally)")
 
 
+problem2()
+
+
 def ask():
     '''this function has an error that depends on input'''
     while True:
