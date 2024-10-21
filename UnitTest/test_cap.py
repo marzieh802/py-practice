@@ -1,3 +1,4 @@
+# unittest
 import unittest  # they are modules
 import cap
 
@@ -6,7 +7,7 @@ class TestCap(unittest.TestCase):
     def test_one_word(self):
         test = "python"
         t = cap.cap_text(test)
-        self.assertEqual(t, "Python")
+        self.assertEqual(t, "Python")  # assert t = ("Python")
 
     def test_two_word(self):
         self.assertEqual(cap.cap_text("python three"), "Python Three")
