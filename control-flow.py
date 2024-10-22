@@ -1,3 +1,5 @@
+# if/elif(related to pervious if)/else
+# they have to align in the same indentation
 # # nature = "mountains"
 
 # # if nature == "jungle":
@@ -9,15 +11,22 @@
 
 # my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+# 'for' is for navigating the lists or sth we can navigate until the end
+# the difference between 'for' and 'while' is while works until the condition is true
 # for num in my_list:
 #     if not (num % 2):
 
 #         print(num)
 
 # message = "earth: please protect me"
-
-# for _ in message:
+# message[0]
+# for _ in message:  # '_' mean is we don't want to name that
 #     print("hello")
+
+# message = "earth: please protect me"
+# message[0]
+# for _ in message:  # '_' mean is we don't want to name that
+#     print(message)
 
 # plus = 0
 # for num in my_list:
@@ -26,14 +35,14 @@
 
 # cords = (1, 2)
 # for cord in cords:
-#     print(f"cord: {cord}")
+#     print(f"cord: {cord}") # this 'f"...:{...}"' is dot formatting
 
 # list_cords = [(1, 2, 3), (3, 4, 7), (5, 6, 9), (7, 8, 0)]
 # for x, y, z in list_cords:
 #     print(f"cords:{z} , {x} , {y}")
 
 # cars = {"name1": "benz", "name2": "pride"}
-# for k, v in cars.items():
+# for k, v in cars.items(): #this is tuple unpacking
 #     print(f"car:{k} , {v}")
 
 # people = {
@@ -111,7 +120,7 @@
 # index_count =0
 # for letter in "abcde":
 #   print("at index {} the letter is {}".format(index_count,letter))
-  
+
 #   index_count +=1
 
 # index_count =0
@@ -121,7 +130,7 @@
 #     index_count +=1    this is counting the index of the word
 
 # for index,letter in enumerate("ertyu"):
-    # print(index,letter,"\n")   this is counting the index of the word
+# print(index,letter,"\n")   this is counting the index of the word
 
 # indentation iterate
 
@@ -134,19 +143,20 @@
 # if (1 in [1,2,3]):
 #     print("in if")
 
-# from random import shuffle
+# from random import shuffle #import a library like math or shuffle
 # list_of_num = [1,2,3,4,5,6]
 # shuffle(list_of_num)
 # print(list_of_num)
 
+# returns a number between 1 and 45333 (both included)
 # from random import randint
-# print(randint(1,45353))
+# print(randint(1,45333))
 
 # random_num = []
 # x = 1
-# while (x <= 100):
-#     random_num.append(randint(1,1000))
-#     x +=1
+# while (x <= 100): # this works until 100 times
+#     random_num.append(randint(1, 1000))
+#     x += 1 # if this line dose'nt exist, we face to infinite loop
 # print(random_num)
 
 
@@ -164,7 +174,7 @@
 # my_list = [num for num in range(50,101) if not(num%2)]
 # print(my_list)
 
-# my_list = [number if number%2 else "even" for number in range(1,11)]
+# my_list = [number if number%2 else "even" for number in range(1,11)] # else just return srt.
 # print(my_list)
 
 # my_list = [f"{h} hour: {m} minute" for h in [1,2] for m in range(0,61)]
@@ -205,8 +215,6 @@
 # list2 = [1,2,3,4]
 # print(list2[0])
 
-st = "create a list of the first letters of every word in this string"
-my_list = [word[0] for word in st.split(" ")]
-print(my_list)
-
-
+# st = "create a list of the first letters of every word in this string"
+# my_list = [word[0] for word in st.split(" ")]
+# print(my_list)
