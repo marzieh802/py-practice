@@ -1,2 +1,0 @@
-inside write
-test9
